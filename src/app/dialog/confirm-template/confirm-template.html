@@ -1,0 +1,9 @@
+<div id="dialog">
+    <h1 mat-dialog-title>{{data.title}}</h1>
+    <div mat-dialog-content class="mat-typography">
+        <h2>{{data.content}}</h2>
+    </div>
+    <div mat-dialog-actions>
+        <button autofocus mat-button mat-dialog-close (click)="confirm()" color="primary" cdkFocusInitial>{{data.confirmText}}</button>
+    </div>
+</div>

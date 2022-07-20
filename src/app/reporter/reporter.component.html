@@ -1,0 +1,24 @@
+<div class="container">
+    <button class="logo" (click)="openAboutUsDialog()">
+    <img src="../../assets/img/logo.png" />
+    <h2>{{'Who we are?' | translate}}</h2>
+  </button>
+    <h3>{{'How should we reach you? (phone, email)' | translate}}</h3>
+    <mat-form-field appearance="outline">
+        <input matInput [(ngModel)]="reportData.wayContact">
+    </mat-form-field>
+    <h3>{{'Should we call in a certain time? If so, when?' | translate}}</h3>
+    <mat-form-field appearance="outline">
+        <input matInput [(ngModel)]="reportData.comments">
+    </mat-form-field>
+    <h3>{{'Should we pretend to be a different place?' | translate}}</h3>
+    <h3>{{'or add other comments' | translate}}</h3>
+    <mat-form-field appearance="outline">
+        <input matInput placeholder={{placeholder}} [(ngModel)]="reportData.fakePlace">
+    </mat-form-field>
+    <p>{{'Terms of use - fragmented 1' | translate}}<a href="https://butterfly-button.web.app/reporter/?language=en&terms-of-use-and-privacy-policy=1#/">{{'terms of use' | translate}} {{'Terms of use - fragmented 2' | translate}}{{'privacy policy' | translate}}</a></p>
+    <div class="btn-group">
+        <button mat-raised-button color="accent" (click)="sendReport()">{{ 'Send' | translate }}</button>
+        <button mat-button color="warn"><a href="https://www.google.com/">{{ 'Leave' | translate }}</a></button>
+    </div>
+</div>

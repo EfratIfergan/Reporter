@@ -1,0 +1,12 @@
+<div id="dialog">
+    <h1 mat-dialog-title>{{ 'Welcome' | translate }}</h1>
+    <div mat-dialog-content class="content mat-typography">
+        <h2>{{"You've entered a safe zone, your message will be kept secret and nothing will be saved on your device." | translate }}</h2>
+        <h3>{{'Are you in danger? In case of immediate danger - Leave everything and call the police!' | translate}}</h3>
+        <p><a href="https://butterfly-button.web.app/reporter/?language=en&terms-of-use-and-privacy-policy=1#/">{{'terms of use' | translate}} {{'Terms of use - fragmented 2' | translate}}{{'privacy policy' | translate}} </a></p>
+    </div>
+    <div mat-dialog-actions class="btn-group">
+        <button mat-button mat-dialog-close class="accept">{{ 'Enter' | translate }}</button>
+        <button mat-button mat-dialog-close><a href="https://www.google.com/" class="c-black">{{ 'Leave' | translate }}</a></button>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    width: 100%;
+    padding: 1% 10%;
+    min-height: calc(100vh - 95px);
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.logo {
+    border: none;
+    background-color: transparent;
+}
+
+.logo>img {
+    width: 25%;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mat-flat-button.mat-accent,
+.mat-raised-button.mat-accent,
+.mat-fab.mat-accent,
+.mat-mini-fab.mat-accent {
+    color: white;
+    background-color: #0dbc3e !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    color: red;
+}
+
+p>a {
+    color: rgb(49, 177, 241);
+}
+
+
+/* .content {
+    width: 100%;
+    height: calc(100vh - 40vh);
+    overflow: auto;
+    text-align: center;
+} */

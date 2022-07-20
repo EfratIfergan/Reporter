@@ -1,0 +1,55 @@
+.content {
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .content {
+        text-align: start;
+    }
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: normal !important;
+}
+
+h3 {
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    border: none;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.accept {
+    color: white;
+    background: #0dbc3e;
+}
+
+p>a {
+    color: rgb(49, 177, 241);
+    text-decoration: none;
+}
+
+button>a {
+    color: black;
+}
+
+.c-black {
+    color: black;
+}
+
+a:focus {
+    outline: none;
+}
